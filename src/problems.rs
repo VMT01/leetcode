@@ -2,6 +2,7 @@ mod climbing_stairs;
 mod delete_and_earn;
 mod fibonacci_number;
 mod house_robber;
+mod longest_palindromic_subsequence;
 mod longest_palindromic_substring;
 mod maximal_square;
 mod min_cost_climbing_stairs;

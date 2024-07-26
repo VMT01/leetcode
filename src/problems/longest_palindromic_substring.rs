@@ -45,12 +45,12 @@ impl Solution {
             let (beg, end, active) = candidates[idx];
             let l = end - beg + 1;
 
-            if active == false && l < max_len {
+            if !active && l < max_len {
                 // Les candidats inactifs dont la longueur est inférieure à la longueur maximale peuvent
                 // être oubliés
                 candidates.swap_remove(idx);
                 actives = true;
-            } else if active == true {
+            } else if active {
                 if beg == 0 || end == n - 1 {
                     // Si on atteint un bout de la chaîne de caractères, le palindrome ne peut plus grandir
                     candidates[idx] = (beg, end, false);
